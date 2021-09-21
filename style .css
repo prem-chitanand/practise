@@ -1,0 +1,26 @@
+div{
+    background-color: beige;
+    font-size: 12px;
+}
+span{
+    background-color: sienna;
+    color: black;
+    font-size: 12px;
+}
+.modals{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 70px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+
+    background-color: blueviolet;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 250px;
+}
