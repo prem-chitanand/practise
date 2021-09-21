@@ -17,10 +17,23 @@ span{
     padding-right: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
-
-
     background-color: blueviolet;
     margin-left: 50px;
     margin-top: 20px;
     margin-left: 250px;
+}
+.child{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 30vh;
+    width: 90vw;
+    background-color: cadetblue;
+}
+.innerChild{
+    
+    margin-top: 10px;
+
+    width: 80%;
+    background-color: cornflowerblue;
+    color: black;
 }
