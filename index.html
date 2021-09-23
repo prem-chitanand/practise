@@ -13,54 +13,36 @@
             box-sizing: border-box;
         }
         
-        .child {
-            width: 100px;
-            min-height: 150px;
+        .background {
+            color: #fff;
             background-color: orange;
-             margin: 5px;
-           }
-        
-        .parent {
-            height: 500px;
-            background-color: black;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: baseline;
-           justify-content: stretch;
-          
-          
-           
-          
-         
-         
         }
-        
-        
+        .heading{
+            margin: 10px;
+            color: whitesmoke;
+       
+        }
+        h1.heading{
+            background-color: blue;
+        }
+        h2.heading{
+            background-color: crimson;
+        }
+        h3.heading{
+            background-color: darkmagenta;
+        }
+        h3.heading#unique{
+            background-color: darkgreen;
+        }
     </style>
 </head>
 
 <body>
-    
-    <div class="parent">
-        <div class="child" style="background-color: yellow;"></div>
-        <div class="child" style="background-color: orange;"></div>
-        <div class="child" style="background-color: purple;"></div>
+    <h1 class="heading">Heading One</h1>
+    <h2 class="heading">Heading Two</h2>
+    <h3 class="heading"> Heading Three</h3>
+    <h3  id="unique"class="heading"> Heading Three</h3>
 
-        <div class="child" style="background-color: yellow;"></div>
-        <div class="child" style="background-color: orange;"></div>
-        <div class="child" style="background-color: purple;"></div>
-
-        <div class="child" style="background-color: yellow;"></div>
-        <div class="child" style="background-color: orange;"></div>
-        <div class="child" style="background-color: purple;"></div>
-       
-    </div>
-
-    
-
-    
 </body>
 
 </html>
