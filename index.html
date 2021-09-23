@@ -14,20 +14,27 @@
         }
         
         .child {
-            width: 140px;
-            height: 100px;
+            width: 100px;
+            min-height: 150px;
             background-color: orange;
-             margin: 10px;
+             margin: 5px;
            }
         
         .parent {
             height: 500px;
             background-color: black;
-           display: flex;
-           flex-direction: row;
-           justify-content: center;
-           align-items: flex-start;
-           color: whitesmoke;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+           justify-content: stretch;
+          
+          
+           
+          
+         
+         
         }
         
         
@@ -35,13 +42,25 @@
 </head>
 
 <body>
-    <h1>flex boxing</h1>
+    
     <div class="parent">
+        <div class="child" style="background-color: yellow;"></div>
+        <div class="child" style="background-color: orange;"></div>
+        <div class="child" style="background-color: purple;"></div>
+
+        <div class="child" style="background-color: yellow;"></div>
+        <div class="child" style="background-color: orange;"></div>
+        <div class="child" style="background-color: purple;"></div>
+
         <div class="child" style="background-color: yellow;"></div>
         <div class="child" style="background-color: orange;"></div>
         <div class="child" style="background-color: purple;"></div>
        
     </div>
+
+    
+
+    
 </body>
 
 </html>
