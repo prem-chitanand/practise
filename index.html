@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css day2</title>
-    <link rel="stylesheet" type="text/css" href="style .css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .parent {
+            height: 500px;
+            background-color: black;
+            position: relative;
+        }
+        
+        .child {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-Its a div and its block level element!
-<h1>pointers for div</h1>
-<ol>
-    <li>width of the block element is 100% of the view port</li>
-    <li>height of the block element is not set automatically</li>
-    <li>height and width can be set using the css</li>
-</ol>
+    <div class="parent">
+        <div class="child"></div>
     </div>
-    <span> Its a span and its inline element
-        <ol>pointers for inline</ol>
-        <li>width of the content is dependent on the content </li>
-        <li>height and width can not be set explicitly</li>
-        <h1>Box sizeing :</h1>
-        <div class="modals">
-            hello world
-        </div>
-        <h2>relative units :</h2>
-        <div class="child">
-            <div class="innerChild">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                </div>
-        </div>
-    </span>
 </body>
+
 </html>
