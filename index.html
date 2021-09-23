@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
+        div.parent{
+            background-color: black;
+            min-height: 150px;
         }
-        
-        .background {
-            color: #fff;
-            background-color: orange;
+        div.child{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            transition: 3s;
+            transition-timing-function: ease-in;
         }
-        .heading{
-            margin: 10px;
-            color: whitesmoke;
-       
-        }
-        h1.heading{
-            background-color: blue;
-        }
-        h2.heading{
-            background-color: crimson;
-        }
-        h3.heading{
-            background-color: darkmagenta;
-        }
-        h3.heading#unique{
-            background-color: darkgreen;
+        div.parent:hover div.child{
+            background-color: red;
+            transform: translateY(225px)
         }
     </style>
 </head>
-
 <body>
-    <h1 class="heading">Heading One</h1>
-    <h2 class="heading">Heading Two</h2>
-    <h3 class="heading"> Heading Three</h3>
-    <h3  id="unique"class="heading"> Heading Three</h3>
-
+    <div class="parent">
+        <div class="child">
+        </div>
+    </div>
 </body>
-
 </html>
